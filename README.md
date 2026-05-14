@@ -17,7 +17,7 @@ A deep-dive comparison of two approaches to image classification on the Intel Im
 
 ## Training Curves
 
-![Training Curves](src\training_curves.png)
+![Training Curves](src/training_curves.png)
 
 ResNet18 opens at 86% accuracy on epoch 1 — before meaningfully training on this dataset. That's the weight of 1.2 million ImageNet images already baked into the backbone. SimpleCNN starts at 60% and has to learn every edge, texture, and shape from scratch. The gap never closes.
 
@@ -27,7 +27,7 @@ The loss curves tell the same story: ResNet starts confident (loss ~0.4) and con
 
 ## Grad-CAM Visualisations
 
-![Grad-CAM](src\gradcam.png)
+![Grad-CAM](src/gradcam.png)
 
 Grad-CAM (Gradient-weighted Class Activation Mapping) visualises which regions of the image the model attended to when making its prediction. Red = high attention, blue = low attention.
 
